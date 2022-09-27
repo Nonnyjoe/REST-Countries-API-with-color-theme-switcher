@@ -1,3 +1,4 @@
+// select all required DOM elements
 const cBody = document.getElementById('c-body');
 const continents = document.getElementById('continents');
 const searchField = document.getElementById('searchField');
@@ -8,6 +9,7 @@ const countriesSec = document.getElementById('countriesSec');
 const back = document.getElementById('back');
 const changeMode = document.querySelector(".changeMode");
 
+// display all countries on home screen
 function homeDispCountries() {
     fetch('https://restcountries.com/v3.1/all')
         .then(Response => Response.json())
@@ -15,6 +17,8 @@ function homeDispCountries() {
 }
 homeDispCountries();
 
+
+// drop down menu filter
 continents.addEventListener('click', (e) => {
     e.preventDefault();
     let element = e.target;
@@ -43,6 +47,9 @@ function filterContinents(continent) {
         .then(result => showResult(result))
 }
 
+
+
+// search button to display countries
 searchBtn.addEventListener('click', (e) => {
     e.preventDefault();
     if (searchField.value !== '') {
@@ -59,6 +66,9 @@ searchBtn.addEventListener('click', (e) => {
     }
 })
 
+
+
+// function to display countries on load, search, and filter
 function showResult(result) {
     let html = '';
     let color = '';
@@ -88,7 +98,7 @@ function showResult(result) {
     searchField.value = '';
 }
 
-
+// display more details about a country onclick
 cBody.addEventListener('click', (e) => {
     let target = e.target.id;
     if (target !== 'c-body') {
@@ -118,7 +128,9 @@ function personalCountry(target) {
                         <div class="personalFlag col-md-5">
                             <img src="${svg}" alt="">
                         </div>
-                        <div class="personalDetails col-md-7">
+                        <div class="col-md-1">
+                        </div>    
+                        <div class="personalDetails col-md-6">
                             <h3 class="personalCountryName mb-3"> <b>${common}</b> </h3>
                             <div class="row">
                                 <div class="col-md-6">
@@ -143,7 +155,7 @@ function personalCountry(target) {
     }
 }
 
-
+// display a countries borders as a link to the bordering countries 
 function showBorder(html, borders) {
     if (borders) {
         fetch(`https://restcountries.com/v3.1/alpha?codes=${borders}`)
@@ -178,6 +190,9 @@ function showBorder(html, borders) {
     countriesSec.classList.add('close');
 }
 
+
+
+// button to go back to general country list
 back.addEventListener('click', (e) => {
     e.preventDefault();
     personalCountryCont.classList.add('close');
@@ -193,6 +208,7 @@ personalCountryCont.addEventListener('click', (e) => {
     }
 })
 
+// theme changing section
 changeMode.addEventListener('click', (e) => {
     let body = document.body;
     let mode = document.querySelectorAll('.mode');
