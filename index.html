@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>index</title>
+</head>
+
+<body>
+    <nav class="nav p-4 mb-4 mode">
+        <div class="title">
+            <h5>Where in the world?</h5>
+        </div>
+        <div class="mode">
+            <button class="changeMode mode" id="lightMode"> <i class="fa-regular fa-moon"></i> Dark Mode</button>
+        </div>
+    </nav>
+
+    <div class="personalCountry container close" id="personalCountry">
+        <button class="back personalBtn mode mb-4" id="back"> <i class="fa-solid fa-arrow-left"></i>Back</button>
+        <div class="pcContent" id="pcContent">
+            <!-- <div class="row">
+                <div class="personalFlag col-md-5">
+                    <img src="./greener global Capture.PNG" alt="">
+                </div>
+                <div class="personalDetails col-md-7">
+                    <h3 class="personalCountryName mb-3"> <b>Belgium</b> </h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class=" c-txt "> <b>Native Name:</b> <span>Belgium</span></p>
+                            <p class=" c-txt "> <b>Population:</b> <span>323,947,000</span></p>
+                            <p class=" c-txt "> <b>Region:</b> <span>Europe</span></p>
+                            <p class=" c-txt "> <b>Sub Region:</b> <span>Western Europe</span></p>
+                            <p class=" c-txt "> <b>Capital:</b> <span>Brussels</span></p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class=" c-txt "> <b>Top Level Domain:</b> <span>be</span></p>
+                            <p class=" c-txt "> <b>Currencis:</b> <span>Euro</span></p>
+                            <p class=" c-txt "> <b>Languages:</b> <span>Dutch</span></p>
+                        </div>
+                    </div>
+                    <div class="border-container row mt-4 mb-5">
+                        <div class="border-title col-md-4 mb-2">
+                            <h5>Border Countries</h5>
+                        </div>
+                        <div class="border-cont buttons col-md-8">
+                            <button class="personalBtn"> France </button>
+                            <button class="personalBtn"> Germany </button>
+                            <button class="personalBtn"> Netherlands </button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="container countries-sec" id="countriesSec">
+        <div class="row">
+            <div class="search mb-5 col-lg-4 mode">
+                <form action="" class="mode">
+                    <button class="submit mode" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <input type="text" class="searchField mode" placeholder="Search for a Country" name="searchField" id="searchField">
+                </form>
+            </div>
+            <div class="col-lg-5"></div>
+            <div class="filter mb-4 col-lg-3">
+                <div class="dropdown">
+                    <button class="btn dropdown-Btn dropdown-toggle mode" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Filter by Region
+                  <i class="fa-solid fa-angle-down shift"></i>
+                </button>
+                    <ul class="dropdown-menu mode" id="continents">
+                        <li><a class="dropdown-item mode Africa" id="dropdownIt" href="#">Africa</a></li>
+                        <li><a class="dropdown-item mode America" id="dropdownIt" href="#">America</a></li>
+                        <li><a class="dropdown-item mode Asia" id="dropdownIt" href="#">Asia</a></li>
+                        <li><a class="dropdown-item mode Europe" id="dropdownIt" href="#">Europe</a></li>
+                        <li><a class="dropdown-item mode Oceania" id="dropdownIt" href="#">Oceania</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="country-body">
+            <div class="row c-body g-4" id="c-body">
+                <!-- <div class="card country mode col-sm-12 col-md-2 col-lg-3 col-xl-4" id="country" style="width: 15rem;">
+                    <div class="flag-body">
+                        <img src="./greener global Capture.PNG" class="flag" alt="" srcset="">
+                    </div>
+                    <div class="card-body card-b" id="country">
+                        <h6 class="card-title "><b>United States of America</b> </h6>
+                        <p class="card-text c-txt "> <b>Population:</b> <span>323,947,000</span></p>
+                        <p class="card-text c-txt "> <b>Region:</b> <span>Americas</span></p>
+                        <p class="card-text c-txt "><b>Capital:</b> <span>Washington, D.C</span></p>
+                        <p class="card-text c-txt continent "><b>Continet:</b> <span>America</span></p>
+                    </div>
+                    <div class="cover" id="common">
+                        .
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+
+    <script src="main.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&family=Nunito+Sans:wght@300;600;800&display=swap');
+:root {
+    --lightMode-component: hsl(0, 0%, 100%);
+    --lightMode-text: hsl(200, 15%, 8%);
+    --lightMode-input: hsl(0, 0%, 52%);
+    --lightMode-Background: hsl(0, 0%, 98%);
+    --DarkMode-component: hsl(209, 23%, 22%);
+    --DarkMode-text: hsl(0, 0%, 100%);
+    --DarkMode-input: hsl(0, 0%, 52%);
+    --DarkMode-Background: hsl(207, 26%, 17%);
+}
+
+body {
+    background-color: var(--lightMode-Background);
+    color: var(--lightMode-text);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.dark-mode {
+    background-color: var(--DarkMode-Background) !important;
+    color: var(--DarkMode-text) !important;
+}
+
+.dark-component {
+    background-color: var(--DarkMode-component) !important;
+    color: var(--DarkMode-text) !important;
+}
+
+.light-component {
+    background-color: var(--lightMode-component);
+}
+
+.nav {
+    height: 4.5rem;
+    background-color: var(--lightMode-component);
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+h5 {
+    font-weight: 800;
+}
+
+button.changeMode {
+    font-weight: 600;
+}
+
+.changeMode,
+.submit {
+    background-color: var(--lightMode-component);
+    outline: none;
+    border: none;
+    font-size: 1rem;
+}
+
+.countries-sec {
+    padding: 0px 1.3rem !important;
+}
+
+.search {
+    background-color: var(--lightMode-component);
+    border-radius: 10px;
+    padding-left: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+input#searchField {
+    height: 3.5rem;
+    width: 88%;
+    border: none;
+    border-radius: 10px;
+    padding-left: 1rem;
+}
+
+input#searchField:focus-visible {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none;
+}
+
+button.submit {
+    width: 10%;
+    color: var(--lightMode-input);
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+.dropdown-Btn {
+    height: 3.5rem;
+    background-color: var(--lightMode-component);
+    width: 14rem !important;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.dropdown-Btn:active,
+.dropdown-Btn:focus {
+    box-shadow: none !important;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.shift {
+    margin-left: 3rem;
+    margin-right: 1rem;
+}
+
+#dropdownIt {
+    font-weight: 600 !important;
+}
+
+.show {
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+.c-body {
+    margin: 0px !important;
+}
+
+.country {
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+}
+
+h6.card-title {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+p.c-txt {
+    margin-bottom: .2rem;
+    overflow: break-word;
+}
+
+.card-b {
+    padding: 1rem !important;
+    margin-bottom: 1rem;
+    font-size: 14px;
+}
+
+.flag-body {
+    height: 9rem !important;
+    width: 100%;
+    overflow: hidden !important;
+}
+
+.flag {
+    height: auto;
+    width: 14.9rem;
+    margin: 0px;
+}
+
+.continent {
+    display: none;
+}
+
+.countryInd {
+    text-decoration: none !important;
+}
+
+.cover {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
+    z-index: 2;
+    color: transparent;
+}
+
+.personalCountry {
+    padding-top: 0px !important;
+    padding: 0px 1.5rem;
+}
+
+.personalBtn {
+    background-color: var(--lightMode-component);
+    width: 8rem;
+    height: 2rem;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    color: var(--lightMode-text);
+}
+
+.personalBtn i {
+    margin-right: .5rem;
+}
+
+img {
+    width: 23rem;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.personalDetails {
+    line-height: 2;
+}
+
+.border-cont {
+    justify-content: space-evenly;
+}
+
+.personalBtn {
+    margin-right: .5rem;
+    margin-bottom: .4rem;
+    width: auto !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.close {
+    height: 0rem;
+    overflow: hidden;
+}
+
+.open {
+    min-height: 90vh;
+}
