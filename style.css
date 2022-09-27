@@ -195,10 +195,9 @@ p.c-txt {
 }
 
 img {
-    width: 23rem;
+    width: 21rem;
+    margin: 2rem auto;
     height: auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
 }
 
 .personalDetails {
