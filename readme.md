@@ -25,8 +25,8 @@ This is a solution to the [REST Countries API with color theme switcher challeng
 
 ### Links
 
-- Solution URL: [Click here for solution URL](https://github.com/Nonnyjoe/interactive-card-details-form)
-- Live Site URL: [Click here for live site](https://nonnyjoe.github.io/interactive-card-details-form/)
+- Solution URL: [Click here for solution URL](https://github.com/Nonnyjoe/REST-Countries-API-with-color-theme-switcher)
+- Live Site URL: [Click here for live site](https://nonnyjoe.github.io/REST-Countries-API-with-color-theme-switcher/)
 
 ### Built with
 
