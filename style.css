@@ -224,3 +224,43 @@ img {
 .open {
     min-height: 90vh;
 }
+
+
+/* skeleton loader */
+
+.flag-body-Load {
+    width: 100%;
+    height: 10rem;
+    background-color: #efefef;
+    animation: loading 1s linear infinite alternate;
+}
+
+.card-title-load {
+    width: 95%;
+    background-color: #efefef;
+    height: 1rem;
+    animation: loading 1s linear infinite alternate;
+}
+
+.c-txt-load {
+    width: 90%;
+    height: 1rem;
+    background-color: #efefef;
+    animation: loading 1s linear infinite alternate;
+}
+
+.card-text-load {
+    width: 80%;
+    height: 1rem;
+    background-color: #efefef;
+    animation: loading 1s linear infinite alternate;
+}
+
+@keyframes loading {
+    0% {
+        background-color: #efefef7c;
+    }
+    100% {
+        background-color: #e2dada;
+    }
+}
